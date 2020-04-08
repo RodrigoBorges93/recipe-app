@@ -5,7 +5,7 @@ import './App.css';
 function App() {
 
     const opts = {
-      height: '350',
+      height: '503',
       width: '780',
     };
 
@@ -17,7 +17,8 @@ async function buscar(){
     .then((meals) => {
         setComida({name: meals.meals[0].strMeal,
                 instructions: meals.meals[0].strInstructions,
-                video: meals.meals[0].strYoutube.slice(32)
+                video: meals.meals[0].strYoutube.slice(32),
+                photo: meals.meals[0].strMealThumb
             })
     })
 }
@@ -33,7 +34,10 @@ async function buscar(){
             <p>{comida.name}</p>
             <p>{comida.instructions}</p>
         </div>
-        <YouTube videoId={comida.video}opts={opts}/>
+        <div className='medias'>
+            <img className='recipe-image'src={comida.photo} alt='Recipe image'></img>
+            <YouTube className='video' videoId={comida.video}opts={opts}/>
+        </div>
     </div>
     :
     null

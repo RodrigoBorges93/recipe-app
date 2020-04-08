@@ -10,6 +10,24 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.medias{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.medias .recipe-image{
+    max-height: 500px;
+    border: 2px solid black;
+    margin-right: 12px;
+    }
+
+.media .video{
+    margin-right: 12px;
+    border: 2px solid black;
+}
+
 .geral .dados {
     text-align:center;
     width: 50%;
