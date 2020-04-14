@@ -24,8 +24,8 @@ async function buscar(){
 }
   return (
     <>
-    <div className='div-button'>
-        <button onClick={() => buscar()}> Gerar receita aleatória </button>
+    <div className= {comida ? 'div-button' : 'sem-comida'}>
+        <button onClick={() => buscar()}> Get random recipe </button>
     </div>
     {
     comida ?
