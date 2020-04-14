@@ -11,7 +11,7 @@
 }
 
 .medias{
-    width: 100%;
+    width: 80%;
     height: 700px;
     display: flex;
     justify-content: center;
@@ -21,10 +21,11 @@
     max-height: 500px;
     border: 2px solid black;
     margin-right: 12px;
+    max-width: 50%;
     }
 
-.media .video{
-    margin-right: 12px;
+.medias .video{
+    max-width: 100%;
 }
 
 .geral .dados {
